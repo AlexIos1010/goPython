@@ -5,11 +5,11 @@
 
 import urllib
 import urllib2
-import re 
+import re
 import sys
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
-  
+
 page = raw_input("Page:")
 url = 'http://www.qiushibaike.com/hot/page/' + str(page)
 user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
@@ -39,7 +39,7 @@ except urllib2.URLError, e:
 		print "\nExp Code:",e.code
 	if hasattr(e,"reason"):
 		print "\nExp reason:",e.reason
-	
+
 #<div class="content">(.*?)<!--(.*?)-->.*?</div>
 
 
