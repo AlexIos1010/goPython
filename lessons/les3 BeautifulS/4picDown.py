@@ -20,10 +20,10 @@ try:
 #    print html_doc
     soup = BeautifulSoup(html_doc)
 #    print soup.find(id='hlogo')
-    print soup.img
+#    print soup.img
     imgDiv = soup.find_all('img')
     print len(imgDiv)
-    picname = raw_input('picnum:')
+    picname = raw_input('picname:')
     picnum = 1
     for image in imgDiv:
         imgUrl = image.get('src')

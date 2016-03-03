@@ -1,0 +1,109 @@
+
+#0 Beautiful Soup 4.2.0 文档¶
+##0.0 寻求帮助¶
+
+#1 快速开始¶
+
+#2 安装 Beautiful Soup¶
+##2.0 安装完成后的问题¶
+##2.1 安装解析器¶
+
+#3 如何使用¶
+
+#4 对象的种类¶
+##4.0 Tag¶
+###4.0.0 Name¶
+###4.0.1 Attributes¶
+##4.1 可以遍历的字符串¶
+##4.2 BeautifulSoup¶
+##4.3 注释及特殊字符串¶
+
+#5 遍历文档树¶
+##5.0 子节点¶
+###5.0.0 tag的名字¶
+###5.0.1 .contents 和 .children¶
+###5.0.2 .descendants¶
+###5.0.3 .string¶
+###5.0.4 .strings 和 stripped_strings¶
+##5.1 父节点¶
+###5.1.0 .parent¶
+###5.1.1 .parents¶
+##5.2 兄弟节点¶
+###5.2.0 .next_sibling 和 .previous_sibling¶
+###5.2.1 .next_siblings 和 .previous_siblings¶
+##5.3 回退和前进¶
+###5.3.0 .next_element 和 .previous_element¶
+###5.3.1 .next_elements 和 .previous_elements¶
+
+#6 搜索文档树¶
+##6.0 过滤器¶
+###6.0.0 字符串¶
+###6.0.1 正则表达式¶
+###6.0.2 列表¶
+###6.0.3 True¶
+###6.0.4 方法¶
+##6.1 find_all()¶
+###6.1.0 name 参数¶
+###6.1.1 keyword 参数¶
+###6.1.2 按CSS搜索¶
+###6.1.3 text 参数¶
+###6.1.4 limit 参数¶
+###6.1.5 recursive 参数¶
+##6.2 像调用 find_all() 一样调用tag¶
+##6.3 find()¶
+##6.4 find_parents() 和 find_parent()¶
+##6.5 find_next_siblings() 合 find_next_sibling()¶
+##6.6 find_previous_siblings() 和 find_previous_sibling()¶
+##6.7 find_all_next() 和 find_next()¶
+##6.8 find_all_previous() 和 find_previous()¶
+##6.9 CSS选择器¶
+
+#7 修改文档树¶
+##7.0 修改tag的名称和属性¶
+##7.1 修改 .string¶
+##7.2 append()¶
+##7.3 BeautifulSoup.new_string() 和 .new_tag()¶
+##7.4 insert()¶
+##7.5 insert_before() 和 insert_after()¶
+##7.6 clear()¶
+##7.7 extract()¶
+##7.8 decompose()¶
+##7.9 replace_with()¶
+##7.10 wrap()¶
+##7.11 unwrap()¶
+
+#8 输出¶
+##8.0 格式化输出¶
+##8.1 压缩输出¶
+##8.2 输出格式¶
+##8.3 get_text()¶
+
+#9 指定文档解析器¶
+##9.0 解析器之间的区别¶
+
+#10 编码¶
+##10.0 输出编码¶
+##10.1 Unicode, dammit! (靠!)¶
+###10.1.0 智能引号¶
+###10.1.1 矛盾的编码¶
+
+#11 解析部分文档¶
+##11.0 SoupStrainer¶
+
+#12 常见问题¶
+##12.0 代码诊断¶
+##12.1 文档解析错误¶
+##12.2 版本错误¶
+##12.3 解析成XML¶
+##12.4 解析器的错误¶
+##12.5 杂项错误¶
+##12.6 如何提高效率¶
+
+#13 Beautiful Soup 3¶
+##13.0 迁移到BS4¶
+###13.0.0 需要的解析器¶
+###13.0.1 方法名的变化¶
+###13.0.2 生成器¶
+###13.0.3 XML¶
+###13.0.4 实体¶
+###13.0.5 迁移杂项¶
