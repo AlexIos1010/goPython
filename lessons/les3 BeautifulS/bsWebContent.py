@@ -25,7 +25,7 @@ try:
     print '\nOpen file\n'
     html_f = open('%s'%fname,'r+')
 
-    content_f = open('bsWebcontent.txt','w')
+    content_f = open('webcontent.txt','w')
     print '\nBuild Content File'
 
     soup = BeautifulSoup(html_f)
@@ -35,7 +35,7 @@ try:
         h1 = h1_tag.get_text()
         print '\n#%d '%h1_count,h1
         h1_encode = '\n#%d '%h1_count+ h1.encode('utf-8') + '\n'
-        print 'h1_encode:',h1_encode
+#        print 'h1_encode:',h1_encode
         content_f.write(h1_encode)
         h2Set = get_h2_from_next_div_has_h2(h1_tag)
         h2_count = 0
