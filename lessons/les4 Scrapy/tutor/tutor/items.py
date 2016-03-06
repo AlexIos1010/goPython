@@ -15,3 +15,11 @@ class DmozItem(scrapy.Item):
     link = scrapy.Field()
     desc = scrapy.Field()
     pass
+
+class StudyItem(scrapy.Item):
+    # name = scrapy.Field()
+    title = scrapy.Field()
+    link = scrapy.Field()
+    img = scrapy.Field()
+    imgid = scrapy.Field()
+    pass
