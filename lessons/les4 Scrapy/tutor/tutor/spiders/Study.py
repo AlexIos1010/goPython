@@ -4,6 +4,8 @@
 #Alex
 
 import scrapy
+from scrapy.selector import Selector
+from tutor.items import StudyItem
 
 class StudySpider(scrapy.Spider):
     name = 'Study'
@@ -14,9 +16,11 @@ class StudySpider(scrapy.Spider):
 
     def parse(self,response):
         sels = response.xpath('//ul/li[@class="avatar"]')
+        items = []
         for sel in sels:
-            name = sel.xpath('@data-nickname').extract()        
-            imgurl = sel.xpath('@src').extract()        
+            item['title'] = sel.xpath('@data-nickname').extract()        
+            item['link'] = sel.xpath('@src').extract()        
+            items.append(item)
             print name
             print imgurl,'\n'
 
