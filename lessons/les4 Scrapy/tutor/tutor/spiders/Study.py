@@ -7,7 +7,7 @@ import scrapy
 
 class StudySpider(scrapy.Spider):
     name = 'Study'
-    allowed_domains = ['http://www.jianshu.com/collection/a6da567d3276']
+    allowed_domains = ['jianshu.com']
     start_urls = [
         "http://www.jianshu.com/collection/a6da567d3276"
     ]
