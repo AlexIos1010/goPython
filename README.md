@@ -7,5 +7,3 @@ Try best to do someting!
 ##TODO
 Too much things!
 
-##License
-Do Whatever U What
